@@ -248,8 +248,7 @@
 <li><a href="#prerequisites">Prerequisites</a></li>
 <li><a href="#installation">Installation</a></li>
 <li><a href="#setup-raspberry-pi">Setup Raspberry Pi</a></li>
-<li><a href="#enable-dec-potala">Enable DEC Potala</a></li>
-<li><a href="#install-ai-application">Install AI Application</a></li>
+<li><a href="#deploy-ai-application">Deploy AI Application</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -404,22 +403,10 @@ sudo apt-get dist-upgrade</code></pre></div></li>
 <li><p>Now your RPi host is ready for AI vision applications</p></li>
 </ul>
 
-<h2 id="enable-dec-potala">Enable DEC Potala</h2>
+<h2 id="deploy-ai-application">Deploy AI Application</h2>
 
-<p>Potala relies on Container Runtime to run services, and currently support
-Docker Container Runtime.</p>
-
-<p>The next step is to install Docker Container Runtime:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#204a87">cd</span> ~
-sudo apt-get update
-sudo apt-get install git
-git clone https://github.com/potala-dzong/potala-home-monitor.git
-<span style="color:#204a87">cd</span> potala-home-monitor
-chmod +x setup_dcr.sh 
-./setup_dcr.sh</code></pre></div>
-<h2 id="install-ai-application">Install AI Application</h2>
-
-<p>Now, Potala is ready for installing AI applications. Let&rsquo;s go to
+<p>Next, let&rsquo;s install and setup an AI application to demonstrate DEC Potala in
+action. Let&rsquo;s go to
 <a href="/docs/solutions/">AI Solutions</a>.</p>
 
         <div class="section-index">
@@ -502,7 +489,7 @@ chmod +x setup_dcr.sh
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified October 2, 2019: <a  href="https://github.com/rdzong/rdzong.github.io/commit/3da48ae8423fa758a97221d7aac6b9fdd166accd">revised and added content; (3da48ae)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified October 3, 2019: <a  href="https://github.com/rdzong/rdzong.github.io/commit/d783a36c52ee69bc0d9bdd609d72e861e5da2cd2">refined the content, and fix the link to gitlab sln-home-monitor-rpi (d783a36)</a>
 </div>
 </div>
 
