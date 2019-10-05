@@ -7,7 +7,6 @@
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
-<link rel="alternate" type="application/rss&#43;xml" href="/docs/getting-started/index.xml">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -21,19 +20,28 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png"sizes="192x192">
 
-<title>Getting Started | Dzong</title><meta property="og:title" content="Getting Started" />
-<meta property="og:description" content="Running DEC Potala on Raspberry Pi
+<title>Home Monitoring System | Dzong</title><meta property="og:title" content="Home Monitoring System" />
+<meta property="og:description" content="Test drive Potala Home Monitoring System
 " />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/docs/getting-started/" />
-<meta property="og:site_name" content="Dzong" />
-<meta itemprop="name" content="Getting Started">
-<meta itemprop="description" content="Running DEC Potala on Raspberry Pi
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/docs/solutions/home_monitor/" />
+<meta property="article:published_time" content="2017-01-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-10-04T22:39:57-07:00" /><meta property="og:site_name" content="Dzong" />
+<meta itemprop="name" content="Home Monitoring System">
+<meta itemprop="description" content="Test drive Potala Home Monitoring System
 ">
 
+
+<meta itemprop="datePublished" content="2017-01-05T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-10-04T22:39:57-07:00" />
+<meta itemprop="wordCount" content="328">
+
+
+
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Getting Started"/>
-<meta name="twitter:description" content="Running DEC Potala on Raspberry Pi
+<meta name="twitter:title" content="Home Monitoring System"/>
+<meta name="twitter:description" content="Test drive Potala Home Monitoring System
 "/>
 
 
@@ -49,9 +57,9 @@
   crossorigin="anonymous"></script>
 
 
-    <title>Getting Started | Dzong</title>
+    <title>Home Monitoring System | Dzong</title>
   </head>
-  <body class="td-section">
+  <body class="td-page">
     <header>
       
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
@@ -79,7 +87,7 @@
 				
 				
 				
-				<a class="nav-link" href="/docs/solutions/" ><span>AI Solutions</span></a>
+				<a class="nav-link active" href="/docs/solutions/" ><span class="active">AI Solutions</span></a>
 			</li>
 			
 			<li class="nav-item mr-4 mb-2 mb-lg-0">
@@ -178,10 +186,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/getting-started/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Getting Started</a>
+    <a  href="/docs/getting-started/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Getting Started</a>
   </li>
   <ul>
-    <li class="collapse show" id="docs-getting-started">
+    <li class="collapse " id="docs-getting-started">
       
       
       
@@ -201,17 +209,17 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/solutions/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">AI Solutions</a>
+    <a  href="/docs/solutions/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">AI Solutions</a>
   </li>
   <ul>
-    <li class="collapse " id="docs-solutions">
+    <li class="collapse show" id="docs-solutions">
       
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-solutions-home-monitor" href="/docs/solutions/home_monitor/">Home Monitoring System</a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docs-solutions-home-monitor" href="/docs/solutions/home_monitor/">Home Monitoring System</a>
       
       
     </li>
@@ -245,7 +253,7 @@
 
 
 
-<a href="https://github.com/rdzong/rdzong.github.io/issues/new?title=Getting%20Started" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+<a href="https://github.com/rdzong/rdzong.github.io/issues/new?title=Home%20Monitoring%20System" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
 
 
 <a href="https://github.com/rdzong/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
@@ -262,9 +270,10 @@
 <li>
 <ul>
 <li><a href="#prerequisites">Prerequisites</a></li>
-<li><a href="#installation">Installation</a></li>
-<li><a href="#setup-raspberry-pi">Setup Raspberry Pi</a></li>
-<li><a href="#deploy-ai-application">Deploy AI Application</a></li>
+<li><a href="#functional-overview">Functional Overview</a></li>
+<li><a href="#hardware-setup">Hardware Setup</a></li>
+<li><a href="#software-installation-and-setup">Software Installation and Setup</a></li>
+<li><a href="#deployed-home">Deployed @Home</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -283,6 +292,9 @@
 
 
 
+
+
+
 <li class="breadcrumb-item" >
 	<a href="/docs/">Documentation</a>
 </li>
@@ -290,8 +302,15 @@
 
 
 
+<li class="breadcrumb-item" >
+	<a href="/docs/solutions/">AI Solutions</a>
+</li>
+
+
+
+
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="/docs/getting-started/">Getting Started</a>
+	<a href="/docs/solutions/home_monitor/">Home Monitoring System</a>
 </li>
 
 	</ol>
@@ -299,18 +318,42 @@
 
             
 <div class="td-content">
-	<h1>Getting Started</h1>
-	<div class="lead">Running DEC Potala on Raspberry Pi</div>
+	<h1>Home Monitoring System</h1>
+	<div class="lead">Test drive Potala Home Monitoring System</div>
 	
 
 
 
 <div class="pageinfo pageinfo-primary">
-<p>Potala is our <i>nano</i> version of DEC Platform for deployment on single
-board computer (SBC) such as Raspberry Pi.</p>
+<p>Potala Home Monitoring system is a home monitoring system with AI-based
+object recognition.</p>
 
 </div>
 
+
+<p>Potala Home Monitoring system can be configured to capture image frame based
+on two different modes: <em>manual</em>, or <em>motion triggerred</em>. Captured images are
+processed in offline batch mode for recognizing object(s) in the picture.
+There is an additional mode that capture images, also based on motion triggered,
+and process object recognition inline albeit it is slower.</p>
+
+
+
+
+
+
+
+
+<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 660px">
+	<img class="card-img-top" src="/docs/solutions/home_monitor/brickwall-camera-dirty-354062_hu3d03a01dcc18bc5be0e67db3d8d209a6_1889291_650x500_fill_q75_catmullrom_smart1.jpg" width="650" height="500">
+	
+	<div class="card-body px-0 pt-2 pb-0">
+		<p class="card-text">
+Outdoor Cameras.
+<small class="text-muted"><br/>Photo: pexels.com</small></p>
+	</div>
+	
+</div>
 
 <h2 id="prerequisites">Prerequisites</h2>
 
@@ -322,127 +365,116 @@ board computer (SBC) such as Raspberry Pi.</p>
 <li><p>[Optional] USB storage: flash drive, SSD drive, or hard drive</p></li>
 </ul>
 
-<h2 id="installation">Installation</h2>
+<h2 id="functional-overview">Functional Overview</h2>
 
-<p>If you are not familiar with Raspberry Pi (RPi), please visit
-<a href="https://projects.raspberrypi.org/en/projects/raspberry-pi-getting-started" target="_blank">Getting started with Raspberry Pi</a>
-to get acquaintance with your small computer.</p>
+<p>The high level functional setup of the home monitoring system is illustrated
+below.</p>
 
-<p>We have tested Potala on Raspbian OS <em>stretch</em> and <em>buster</em>. If your RPi has
-older version, please follow the following instructions to upgrade the OS.
-Ideally, you should erase and install a fresh OS on the micro SD card.
-However, if you are an adventurer please follow the official guidelines,
-<a href="https://www.raspberrypi.org/documentation/raspbian/updating.md" target="_blank">Updating and upgrading Raspbian</a>.</p>
 
-<p>To clean install the latest Raspbian OS:</p>
+
+
+
+
+
+
+<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 710px">
+	<img class="card-img-top" src="/docs/solutions/home_monitor/setup_hu2ba9748012900b69f3b5671e9e30f31c_687406_700x620_resize_catmullrom_2.png" width="700" height="620">
+	
+	<div class="card-body px-0 pt-2 pb-0">
+		<p class="card-text">
+Functional Setup
+<small class="text-muted"><br/>Photo: Dzong</small></p>
+	</div>
+	
+</div>
+
+<p>The hardware components consists of: Raspberry Pi, and the Pi camera.
+It&rsquo;s assumed that the RPi is connected to a monitor, keyboard and mouse,
+at least during initial setup; they can be removed after completion of the
+setup. Future access to RPi can be done using SSH for terminal access, and
+VNC for GUI access. Both of these services need to be enabled because they
+are not enabled by default. Please refer to
+<a href="https://www.raspberrypi.org/documentation/remote-access/ssh/" target="_blank">Remote Access - SSH</a>
+and <a href="https://www.raspberrypi.org/documentation/remote-access/vnc/" target="_blank">Remote Access - VNC</a>
+for how to enable these services.</p>
+
+<p>The software components (services) consists of:</p>
 
 <ul>
-<li><p>From a computer or laptop, download the Raspbian OS from
-<a href="https://www.raspberrypi.org/downloads/raspbian/" target="_blank">Raspberry Pi download</a></p>
+<li><p>Image web portal to view and review captured images</p></li>
 
-<ul>
-<li>Select &ldquo;<a href="https://www.raspberrypi.org/downloads/raspbian/" target="_blank">Raspbian</a>&ldquo;</li>
-<li>Choose the &ldquo;desktop&rdquo; version; for example, &ldquo;Raspbian Buster with desktop&rdquo;.
-We are using the desktop version that comes with the GUI, so to demonstrate
-the camera streaming on the monitor connected with HDMI cable.<br />
-Otherwsie, Potala will work with the &ldquo;Lite&rdquo; version as well, for example,
-&ldquo;Raspbian Buster Lite&rdquo;</li>
-<li>Click &ldquo;Download ZIP&rdquo;</li>
-<li>For earlier version, Raspbian Stretch, go to <a href="https://downloads.raspberrypi.org/raspbian/images/" target="_blank">downloads archive</a><br />
-<br /></li>
-</ul></li>
-
-<li><p>From the computer and use the downloaded <code>.zip</code> file, install a Raspberry Pi
-operating system image on an SD card; also described in
-<a href="https://www.raspberrypi.org/documentation/installation/installing-images/README.md" target="_blank">Installing operating system images</a>:</p>
-
-<ul>
-<li>check the <a href="https://www.raspberrypi.org/documentation/installation/sd-cards.md" target="_blank">SD card requirements</a>
-but if your SD card is not greater than 32GB, you should be OK to proceed</li>
-<li><a href="https://www.balena.io/etcher/" target="_blank">Download balenaEtcher</a> and install on your
-computer; <strong>balenaEtcher</strong> is a graphical tool to install OS to SD card
-that works on Mac OS, Linux and Windows.</li>
-<li>Insert the SD card into the corresponding slot on your computer</li>
-<li>Follow the
-<a href="https://www.raspberrypi.org/documentation/installation/installing-images/README.md" target="_blank">Installing operating system images</a>
-<br />
-<br /></li>
-</ul></li>
-
-<li><p>While the SD card is being flashed, prepare your Raspberry Pi BUT don&rsquo;t
-connect the power supply yet. Connect the HDMI cable to a monitor,
-mouse &amp; keyboard to USB port, get the wifi SSID and password ready, and
-setup the camera. For instructions on how to setup the camera, please visit
-<a href="https://projects.raspberrypi.org/en/projects/getting-started-with-picamera" target="_blank">Getting started with the Camera Module</a>.</p></li>
-
-<li><p>When the SD card is flashed, eject from computer &amp; insert it into the
-Rapsberry Pi to start first booting.</p></li>
-
-<li><p>Continue to the next step, &ldquo;Setup Raspberry Pi&rdquo;</p></li>
+<li><p>Camera monitoring services</p></li>
 </ul>
 
-<h2 id="setup-raspberry-pi">Setup Raspberry Pi</h2>
+<h2 id="hardware-setup">Hardware Setup</h2>
 
-<ul>
-<li><p>After first boot, follow the screen instructions to setup the OS</p></li>
+<p>It&rsquo;s amazing what a low-cost single board computer like Raspberry Pi can do.
+This is based on the Pi 3 Model B+. The Pi 4 and future models will get even
+better.</p>
 
-<li><p>Login using the login id/password you provided during OS setup, a step above.
-The default login id: pi; and password: raspberry.</p></li>
 
-<li><p>If any of the setup is incorrect, reconfigure using <code>raspi-config</code> from
-terminal, setup that includes: change password, setup country, language, timezone, keyboard,
-wifi, etc.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo raspi-config</code></pre></div>
-<p>Note: to reconfigure using GUI, go to <code>Start - Preference - Raspberry Pi 
-Configuration</code></p></li>
 
-<li><p>Assuming you have setup the camera while waiting for the SD to be flashed,
-proceed with enabling the camera on the next step; otherwise follow the
-instructions on how to setup the camera, by visiting
-<a href="https://projects.raspberrypi.org/en/projects/getting-started-with-picamera" target="_blank">Getting started with the Camera Module</a></p></li>
 
-<li><p>If not already done, enable the camera using <code>'raspi-config</code> from the
-terminal, or from the Raspberry Pi Configuration GUI. For more detailed
-instructions, please visit
-<a href="https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/3" target="_blank">Connect the Camera Module</a></p></li>
 
-<li><p>check if the camera is mounted correctly and working, by opening a terminal
-and type:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#204a87">cd</span> ~
-raspistill -v -o test.jpg</code></pre></div>
-<p>Refer to <a href="https://www.raspberrypi.org/documentation/usage/camera/" target="_blank">Raspberry Camera Module</a></p></li>
 
-<li><p>Finally, update the raspbian OS to get the latest patches</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get update
-sudo apt-get dist-upgrade</code></pre></div></li>
 
-<li><p>Now your RPi host is ready for AI vision applications</p></li>
-</ul>
 
-<h2 id="deploy-ai-application">Deploy AI Application</h2>
+<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 760px">
+	<img class="card-img-top" src="/docs/solutions/home_monitor/7_inch_screen_standback_hu980510680f5d5ec9769ffd133d7e376f_1289236_750x0_resize_q75_catmullrom.jpg" width="750" height="461">
+	
+	<div class="card-body px-0 pt-2 pb-0">
+		<p class="card-text">
+Raspberry Pi 3 Model B+ mounted on the back of 7-inch capacitive touch screen.
+<small class="text-muted"><br/>Photo: Dzong</small></p>
+	</div>
+	
+</div>
 
-<p>Next, let&rsquo;s install and setup an AI application to demonstrate DEC Potala in
-action. Let&rsquo;s go to
-<a href="/docs/solutions/">AI Solutions</a>.</p>
+<p>
 
-        <div class="section-index">
-    
-    
-    
-    
-    <hr class="panel-line">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-    
+
+
+
+
+
+<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 760px">
+	<img class="card-img-top" src="/docs/solutions/home_monitor/potala_hw_setup_hu72aad811573c503abe5f770182cc9736_865852_750x0_resize_q75_catmullrom.jpg" width="750" height="788">
+	
+	<div class="card-body px-0 pt-2 pb-0">
+		<p class="card-text">
+Complete setup with Pi-camera
+<small class="text-muted"><br/>Photo: Dzong</small></p>
+	</div>
+	
+</div>
+Setup with Camera</p>
+
+<h2 id="software-installation-and-setup">Software Installation and Setup</h2>
+
+<p>The installation and setup can be found at
+<a href="https://gitlab.com/potala/sln-home-monitor-rpi" target="_blank">Potala Home Monitor for Raspberry Pi @Github</a>.</p>
+
+<h2 id="deployed-home">Deployed @Home</h2>
+
+<p>Depending where you place the camera or the type of camera used, the results
+can be pretty impressive.</p>
+
+
+
+
+
+
+
+
+<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 2010px">
+	<img class="card-img-top" src="/docs/solutions/home_monitor/potala_img_portal_hu707f64b027a4eec9c753ea4efeba9eea_2742522_2000x1600_fit_catmullrom_2.PNG" width="2000" height="1486">
+	
+	<div class="card-body px-0 pt-2 pb-0">
+		<p class="card-text">
+Web-based Image Portal
+<small class="text-muted"><br/>Photo: Dzong</small></p>
+	</div>
+	
 </div>
 
 	
@@ -507,9 +539,10 @@ action. Let&rsquo;s go to
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified October 3, 2019: <a  href="https://github.com/rdzong/rdzong.github.io/commit/d783a36c52ee69bc0d9bdd609d72e861e5da2cd2">refined the content, and fix the link to gitlab sln-home-monitor-rpi (d783a36)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified October 4, 2019: <a  href="https://github.com/rdzong/rdzong.github.io/commit/fd61f5d4eb22c22b7b1d04c6a3c7b73859429a08">add images, and adjust size; restructure AI solution (fd61f5d)</a>
 </div>
 </div>
+
 
           </main>
         </div>
