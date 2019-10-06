@@ -22,18 +22,18 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png"sizes="192x192">
 
 <title>Getting Started | Dzong</title><meta property="og:title" content="Getting Started" />
-<meta property="og:description" content="Running DEC Potala on Raspberry Pi
+<meta property="og:description" content="Running Dzong Edge Computing Platform (DEC) - Potala
 " />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/docs/getting-started/" />
 <meta property="og:site_name" content="Dzong" />
 <meta itemprop="name" content="Getting Started">
-<meta itemprop="description" content="Running DEC Potala on Raspberry Pi
+<meta itemprop="description" content="Running Dzong Edge Computing Platform (DEC) - Potala
 ">
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Getting Started"/>
-<meta name="twitter:description" content="Running DEC Potala on Raspberry Pi
+<meta name="twitter:description" content="Running Dzong Edge Computing Platform (DEC) - Potala
 "/>
 
 
@@ -175,6 +175,18 @@
       
       
       
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-getting-started-rpi" href="/docs/getting-started/rpi/">Raspberry Pi</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-getting-started-jetson" href="/docs/getting-started/jetson/">Jetson Nano</a>
+      
+      
     </li>
   </ul>
 </ul>
@@ -201,7 +213,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-solutions-home-monitor" href="/docs/solutions/home_monitor/">Home Monitoring System</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-solutions-home-monitor" href="/docs/solutions/home_monitor/">Home Monitoring System - HOMS</a>
       
       
     </li>
@@ -247,18 +259,6 @@
 
 
 
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#prerequisites">Prerequisites</a></li>
-<li><a href="#installation">Installation</a></li>
-<li><a href="#setup-raspberry-pi">Setup Raspberry Pi</a></li>
-<li><a href="#deploy-ai-application">Deploy AI Application</a></li>
-</ul></li>
-</ul>
-</nav>
-
 
 
           </div>
@@ -290,130 +290,21 @@
             
 <div class="td-content">
 	<h1>Getting Started</h1>
-	<div class="lead">Running DEC Potala on Raspberry Pi</div>
+	<div class="lead">Running Dzong Edge Computing Platform (DEC) - Potala</div>
 	
 
 
 
 <div class="pageinfo pageinfo-primary">
 <p>Potala is our <i>nano</i> version of DEC Platform for deployment on single
-board computer (SBC) such as Raspberry Pi.</p>
+board computer (SBC) such as Raspberry Pi or Jetson Nano.</p>
 
 </div>
 
 
-<h2 id="prerequisites">Prerequisites</h2>
+<p>Select your hardware and follow the setup instructions.</p>
 
-<ul>
-<li><p>Raspberry Pi 3 Model B+, or Pi 4 Model</p></li>
-
-<li><p>Picamera Module v2.1, Sony IMX219 8-megapixel sensor</p></li>
-
-<li><p>[Optional] USB storage: flash drive, SSD drive, or hard drive</p></li>
-</ul>
-
-<h2 id="installation">Installation</h2>
-
-<p>If you are not familiar with Raspberry Pi (RPi), please visit
-<a href="https://projects.raspberrypi.org/en/projects/raspberry-pi-getting-started" target="_blank">Getting started with Raspberry Pi</a>
-to get acquaintance with your small computer.</p>
-
-<p>We have tested Potala on Raspbian OS <em>stretch</em> and <em>buster</em>. If your RPi has
-older version, please follow the following instructions to upgrade the OS.
-Ideally, you should erase and install a fresh OS on the micro SD card.
-However, if you are an adventurer please follow the official guidelines,
-<a href="https://www.raspberrypi.org/documentation/raspbian/updating.md" target="_blank">Updating and upgrading Raspbian</a>.</p>
-
-<p>To clean install the latest Raspbian OS:</p>
-
-<ul>
-<li><p>From a computer or laptop, download the Raspbian OS from
-<a href="https://www.raspberrypi.org/downloads/raspbian/" target="_blank">Raspberry Pi download</a></p>
-
-<ul>
-<li>Select &ldquo;<a href="https://www.raspberrypi.org/downloads/raspbian/" target="_blank">Raspbian</a>&ldquo;</li>
-<li>Choose the &ldquo;desktop&rdquo; version; for example, &ldquo;Raspbian Buster with desktop&rdquo;.
-We are using the desktop version that comes with the GUI, so to demonstrate
-the camera streaming on the monitor connected with HDMI cable.<br />
-Otherwsie, Potala will work with the &ldquo;Lite&rdquo; version as well, for example,
-&ldquo;Raspbian Buster Lite&rdquo;</li>
-<li>Click &ldquo;Download ZIP&rdquo;</li>
-<li>For earlier version, Raspbian Stretch, go to <a href="https://downloads.raspberrypi.org/raspbian/images/" target="_blank">downloads archive</a><br />
-<br /></li>
-</ul></li>
-
-<li><p>From the computer and use the downloaded <code>.zip</code> file, install a Raspberry Pi
-operating system image on an SD card; also described in
-<a href="https://www.raspberrypi.org/documentation/installation/installing-images/README.md" target="_blank">Installing operating system images</a>:</p>
-
-<ul>
-<li>check the <a href="https://www.raspberrypi.org/documentation/installation/sd-cards.md" target="_blank">SD card requirements</a>
-but if your SD card is not greater than 32GB, you should be OK to proceed</li>
-<li><a href="https://www.balena.io/etcher/" target="_blank">Download balenaEtcher</a> and install on your
-computer; <strong>balenaEtcher</strong> is a graphical tool to install OS to SD card
-that works on Mac OS, Linux and Windows.</li>
-<li>Insert the SD card into the corresponding slot on your computer</li>
-<li>Follow the
-<a href="https://www.raspberrypi.org/documentation/installation/installing-images/README.md" target="_blank">Installing operating system images</a>
-<br />
-<br /></li>
-</ul></li>
-
-<li><p>While the SD card is being flashed, prepare your Raspberry Pi BUT don&rsquo;t
-connect the power supply yet. Connect the HDMI cable to a monitor,
-mouse &amp; keyboard to USB port, get the wifi SSID and password ready, and
-setup the camera. For instructions on how to setup the camera, please visit
-<a href="https://projects.raspberrypi.org/en/projects/getting-started-with-picamera" target="_blank">Getting started with the Camera Module</a>.</p></li>
-
-<li><p>When the SD card is flashed, eject from computer &amp; insert it into the
-Rapsberry Pi to start first booting.</p></li>
-
-<li><p>Continue to the next step, &ldquo;Setup Raspberry Pi&rdquo;</p></li>
-</ul>
-
-<h2 id="setup-raspberry-pi">Setup Raspberry Pi</h2>
-
-<ul>
-<li><p>After first boot, follow the screen instructions to setup the OS</p></li>
-
-<li><p>Login using the login id/password you provided during OS setup, a step above.
-The default login id: pi; and password: raspberry.</p></li>
-
-<li><p>If any of the setup is incorrect, reconfigure using <code>raspi-config</code> from
-terminal, setup that includes: change password, setup country, language, timezone, keyboard,
-wifi, etc.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo raspi-config</code></pre></div>
-<p>Note: to reconfigure using GUI, go to <code>Start - Preference - Raspberry Pi 
-Configuration</code></p></li>
-
-<li><p>Assuming you have setup the camera while waiting for the SD to be flashed,
-proceed with enabling the camera on the next step; otherwise follow the
-instructions on how to setup the camera, by visiting
-<a href="https://projects.raspberrypi.org/en/projects/getting-started-with-picamera" target="_blank">Getting started with the Camera Module</a></p></li>
-
-<li><p>If not already done, enable the camera using <code>'raspi-config</code> from the
-terminal, or from the Raspberry Pi Configuration GUI. For more detailed
-instructions, please visit
-<a href="https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/3" target="_blank">Connect the Camera Module</a></p></li>
-
-<li><p>check if the camera is mounted correctly and working, by opening a terminal
-and type:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#204a87">cd</span> ~
-raspistill -v -o test.jpg</code></pre></div>
-<p>Refer to <a href="https://www.raspberrypi.org/documentation/usage/camera/" target="_blank">Raspberry Camera Module</a></p></li>
-
-<li><p>Finally, update the raspbian OS to get the latest patches</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get update
-sudo apt-get dist-upgrade</code></pre></div></li>
-
-<li><p>Now your RPi host is ready for AI vision applications</p></li>
-</ul>
-
-<h2 id="deploy-ai-application">Deploy AI Application</h2>
-
-<p>Next, let&rsquo;s install and setup an AI application to demonstrate DEC Potala in
-action. Let&rsquo;s go to
-<a href="/docs/solutions/">AI Solutions</a>.</p>
+<h2 id="current-supported-hardwares">Current Supported Hardwares</h2>
 
         <div class="section-index">
     
@@ -424,6 +315,26 @@ action. Let&rsquo;s go to
         
             
         
+            
+                <div class="entry">
+                    <h5>
+                        <a href="/docs/getting-started/rpi/">Raspberry Pi</a>
+                    </h5>
+                    <p>Running DEC Potala on Raspberry Pi
+</p>
+                </div>
+            
+        
+            
+        
+            
+                <div class="entry">
+                    <h5>
+                        <a href="/docs/getting-started/jetson/">Jetson Nano</a>
+                    </h5>
+                    <p>Running DEC Potala on Jetson Nano
+</p>
+                </div>
             
         
             
@@ -497,7 +408,7 @@ action. Let&rsquo;s go to
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified October 3, 2019: <a  href="https://github.com/rdzong/rdzong.github.io/commit/d783a36c52ee69bc0d9bdd609d72e861e5da2cd2">refined the content, and fix the link to gitlab sln-home-monitor-rpi (d783a36)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified October 6, 2019: <a  href="https://github.com/rdzong/rdzong.github.io/commit/51035c34e1847970830828701a120e220e7480c6">add getting started for jetson nano; revised content; (51035c3)</a>
 </div>
 </div>
 

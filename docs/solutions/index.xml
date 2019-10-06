@@ -14,7 +14,7 @@
     
     
     <item>
-      <title>Docs: Home Monitoring System</title>
+      <title>Docs: Home Monitoring System - HOMS</title>
       <link>/docs/solutions/home_monitor/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
@@ -27,7 +27,7 @@
 
 
 &lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;p&gt;Potala Home Monitoring system is a home monitoring system with AI-based
+&lt;p&gt;Potala Home Monitoring system, HOMS, is a home monitoring system with AI-based
 object recognition.&lt;/p&gt;
 
 &lt;/div&gt;
@@ -153,8 +153,13 @@ Setup with Camera&lt;/p&gt;
 
 &lt;h2 id=&#34;software-installation-and-setup&#34;&gt;Software Installation and Setup&lt;/h2&gt;
 
-&lt;p&gt;The installation and setup can be found at
-&lt;a href=&#34;https://gitlab.com/potala/sln-home-monitor-rpi&#34; target=&#34;_blank&#34;&gt;Potala Home Monitor for Raspberry Pi @Github&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The installation and setup can be found at:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://gitlab.com/potala/sln-home-monitor-rpi&#34; target=&#34;_blank&#34;&gt;Potala Home Monitoring System for Raspberry Pi @Github&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://gitlab.com/potala/sln-home-monitor-jetson&#34; target=&#34;_blank&#34;&gt;Potala Home Monitoring System for Jetson Nano @Github&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;deployed-home&#34;&gt;Deployed @Home&lt;/h2&gt;
 
