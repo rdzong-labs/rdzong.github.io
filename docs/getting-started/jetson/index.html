@@ -26,15 +26,15 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/getting-started/jetson/" />
 <meta property="article:published_time" content="2017-01-05T00:00:00+00:00" />
-<meta property="article:modified_time" content="2019-10-06T15:00:25-07:00" /><meta property="og:site_name" content="Dzong" />
+<meta property="article:modified_time" content="2019-10-06T15:48:51-07:00" /><meta property="og:site_name" content="Dzong" />
 <meta itemprop="name" content="Jetson Nano">
 <meta itemprop="description" content="Running DEC Potala on Jetson Nano
 ">
 
 
 <meta itemprop="datePublished" content="2017-01-05T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2019-10-06T15:00:25-07:00" />
-<meta itemprop="wordCount" content="1231">
+<meta itemprop="dateModified" content="2019-10-06T15:48:51-07:00" />
+<meta itemprop="wordCount" content="1245">
 
 
 
@@ -345,23 +345,23 @@ The Jetson Nano™ Developer Kit refers to both HW and SW, as discussed on
 
 <p>If you are not familiar with Nvidia Jetson Nano, please visit
 <a href="https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#intro" target="_blank">Getting Started With Jetson Nano Developer Kit</a>
-to get acquaintance with your GPU computer. Follow the beginner instructions
+to get acquainted with your GPU computer. Follow the beginner instructions
 that includes: introduction, prepare for setup, write image to the microSD card,
 setup and first boot, next steps, and  troubleshooting.</p>
 
-<p>Jetson Nano Operating System (i.e., Ubuntu) is bundled in the
+<p>Jetson Nano default Operating System is Ubuntu and it&rsquo;s bundled in the
 <a href="https://developer.nvidia.com/embedded/jetpack" target="_blank">Jetpack SDK</a>
 that also contains developer tools, libraries and APIs, samples, and
 documentation needed to develop AI application using Nvidia CUDA.</p>
 
-<p>[<strong>Recommended</strong>] the instruction on the &ldquo;write image to the microSD card&rdquo; step,
-asks to download the SD Card image in zip file (<em>1. Download the Jetson Nano
-Developer Kit SD Card Image</em>) by clicking on the link.
+<p>[<strong>Recommended</strong>] the instruction on the
+<a href="https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write" target="_blank">Getting Started With Jetson Nano Developer Kit - Write Image to the microSD Card</a>
+step, asks to download the SD Card image in zip file by cliking on the link
+on step <em>1. Download the Jetson Nano Developer Kit SD Card Image</em>.
 <strong>NOTE:</strong> the link may point to an old version file.
 As of this writing, the latest version file is <code>jetson-nano-sd-r32.2.1.zip</code>
-which contains to Jetpack version 4.2.2, and can be &amp; should be downloaded
-from:
-- <a href="https://developer.nvidia.com/embedded/jetpack" target="_blank">https://developer.nvidia.com/embedded/jetpack</a></p>
+which contains to Jetpack version 4.2.2, and can be downloaded from:
+<a href="https://developer.nvidia.com/embedded/jetpack" target="_blank">https://developer.nvidia.com/embedded/jetpack</a></p>
 
 <p>Also note that there are two ways of <code>flashing</code> (a.k.a, installing OS on Jetson
 Nano):</p>
@@ -370,14 +370,14 @@ Nano):</p>
 <li><p><strong>Recommended</strong> - download the SD Card image to a computer or laptop, and
 flash the image to the SD card using, for example, Etcher. The SD Card image
 is refered by NVIDIA as JetPack SDK and the latest version as of this
-writing is version 4.2.2;
-<strong>NOTE</strong>: using version 4.2.1 or later is important because since 4.2.1
-it included a beta version of NVIDIA Container Runtime with Docker
+writing is version 4.2.2.
+<strong>NOTE</strong>: using version 4.2.1 or later is important because version 4.2.1
+or later includes a beta version of NVIDIA Container Runtime with Docker
 integration for the Jetson platform.</p></li>
 
 <li><p>The second way to setup OS on Jetson Nano is to use the NVIDIA SDK Manager;
-this method also to be perform from a computer/laptop, seems to be more
-complicated and involves SDK Manager GUI. Has not been attempted.</p></li>
+this method also need to be perform from a computer/laptop, but it seems
+to be more complicated and involves SDK Manager GUI. Has not been attempted.</p></li>
 </ul>
 
 <h3 id="step-by-step-instructions">Step-by-step instructions</h3>
@@ -426,7 +426,8 @@ SD card port is, go to <a href="https://developer.nvidia.com/embedded/learn/get-
 <li><p>After first boot, follow the screen instructions to setup the OS</p></li>
 
 <li><p>Login using the login id/password you provided during OS setup, a step above.
-The login id should be: <code>pi</code> for the preconfigured scripts to work later.</p></li>
+<strong>It&rsquo;s important to use the login id, <code>pi</code>,</strong> for the preconfigured scripts
+to work later.</p></li>
 
 <li><p>Check kernel version for your own info</p>
 
@@ -654,7 +655,7 @@ action. Let&rsquo;s go to
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified October 6, 2019: <a  href="https://github.com/rdzong/rdzong.github.io/commit/51035c34e1847970830828701a120e220e7480c6">add getting started for jetson nano; revised content; (51035c3)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified October 6, 2019: <a  href="https://github.com/rdzong/rdzong.github.io/commit/67588e221129abb9f704ba7921aeb64a37f30409">refined content for accuracy and brevity. (67588e2)</a>
 </div>
 </div>
 

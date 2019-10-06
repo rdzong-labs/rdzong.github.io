@@ -349,23 +349,23 @@ The Jetson Nano™ Developer Kit refers to both HW and SW, as discussed on
 
 &lt;p&gt;If you are not familiar with Nvidia Jetson Nano, please visit
 &lt;a href=&#34;https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#intro&#34; target=&#34;_blank&#34;&gt;Getting Started With Jetson Nano Developer Kit&lt;/a&gt;
-to get acquaintance with your GPU computer. Follow the beginner instructions
+to get acquainted with your GPU computer. Follow the beginner instructions
 that includes: introduction, prepare for setup, write image to the microSD card,
 setup and first boot, next steps, and  troubleshooting.&lt;/p&gt;
 
-&lt;p&gt;Jetson Nano Operating System (i.e., Ubuntu) is bundled in the
+&lt;p&gt;Jetson Nano default Operating System is Ubuntu and it&amp;rsquo;s bundled in the
 &lt;a href=&#34;https://developer.nvidia.com/embedded/jetpack&#34; target=&#34;_blank&#34;&gt;Jetpack SDK&lt;/a&gt;
 that also contains developer tools, libraries and APIs, samples, and
 documentation needed to develop AI application using Nvidia CUDA.&lt;/p&gt;
 
-&lt;p&gt;[&lt;strong&gt;Recommended&lt;/strong&gt;] the instruction on the &amp;ldquo;write image to the microSD card&amp;rdquo; step,
-asks to download the SD Card image in zip file (&lt;em&gt;1. Download the Jetson Nano
-Developer Kit SD Card Image&lt;/em&gt;) by clicking on the link.
+&lt;p&gt;[&lt;strong&gt;Recommended&lt;/strong&gt;] the instruction on the
+&lt;a href=&#34;https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write&#34; target=&#34;_blank&#34;&gt;Getting Started With Jetson Nano Developer Kit - Write Image to the microSD Card&lt;/a&gt;
+step, asks to download the SD Card image in zip file by cliking on the link
+on step &lt;em&gt;1. Download the Jetson Nano Developer Kit SD Card Image&lt;/em&gt;.
 &lt;strong&gt;NOTE:&lt;/strong&gt; the link may point to an old version file.
 As of this writing, the latest version file is &lt;code&gt;jetson-nano-sd-r32.2.1.zip&lt;/code&gt;
-which contains to Jetpack version 4.2.2, and can be &amp;amp; should be downloaded
-from:
-- &lt;a href=&#34;https://developer.nvidia.com/embedded/jetpack&#34; target=&#34;_blank&#34;&gt;https://developer.nvidia.com/embedded/jetpack&lt;/a&gt;&lt;/p&gt;
+which contains to Jetpack version 4.2.2, and can be downloaded from:
+&lt;a href=&#34;https://developer.nvidia.com/embedded/jetpack&#34; target=&#34;_blank&#34;&gt;https://developer.nvidia.com/embedded/jetpack&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Also note that there are two ways of &lt;code&gt;flashing&lt;/code&gt; (a.k.a, installing OS on Jetson
 Nano):&lt;/p&gt;
@@ -374,14 +374,14 @@ Nano):&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Recommended&lt;/strong&gt; - download the SD Card image to a computer or laptop, and
 flash the image to the SD card using, for example, Etcher. The SD Card image
 is refered by NVIDIA as JetPack SDK and the latest version as of this
-writing is version 4.2.2;
-&lt;strong&gt;NOTE&lt;/strong&gt;: using version 4.2.1 or later is important because since 4.2.1
-it included a beta version of NVIDIA Container Runtime with Docker
+writing is version 4.2.2.
+&lt;strong&gt;NOTE&lt;/strong&gt;: using version 4.2.1 or later is important because version 4.2.1
+or later includes a beta version of NVIDIA Container Runtime with Docker
 integration for the Jetson platform.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;The second way to setup OS on Jetson Nano is to use the NVIDIA SDK Manager;
-this method also to be perform from a computer/laptop, seems to be more
-complicated and involves SDK Manager GUI. Has not been attempted.&lt;/p&gt;&lt;/li&gt;
+this method also need to be perform from a computer/laptop, but it seems
+to be more complicated and involves SDK Manager GUI. Has not been attempted.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;step-by-step-instructions&#34;&gt;Step-by-step instructions&lt;/h3&gt;
@@ -430,7 +430,8 @@ SD card port is, go to &lt;a href=&#34;https://developer.nvidia.com/embedded/lea
 &lt;li&gt;&lt;p&gt;After first boot, follow the screen instructions to setup the OS&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Login using the login id/password you provided during OS setup, a step above.
-The login id should be: &lt;code&gt;pi&lt;/code&gt; for the preconfigured scripts to work later.&lt;/p&gt;&lt;/li&gt;
+&lt;strong&gt;It&amp;rsquo;s important to use the login id, &lt;code&gt;pi&lt;/code&gt;,&lt;/strong&gt; for the preconfigured scripts
+to work later.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Check kernel version for your own info&lt;/p&gt;
 
